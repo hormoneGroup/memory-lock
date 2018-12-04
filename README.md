@@ -19,6 +19,7 @@ composer require hormone/memory-lock
 require 'vendor/autoload.php';
 
 try {
+
     $redis = new \Redis();
     $redis->connect('127.0.0.1', 6379);
     
@@ -61,9 +62,10 @@ try {
 require 'vendor/autoload.php';
 
 try {
-  $memcached = new \Memcached([
+
+   $memcached = new \Memcached([
       'servers' => array('127.0.0.1:11211'),
-  ]);
+   ]);
   
    $config = [
        // 适配器类型
