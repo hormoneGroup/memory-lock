@@ -1,0 +1,44 @@
+{
+    "name": "hormone/memory-lock",
+    "type": "library",
+    "keywords": [
+        "php",
+        "memory",
+        "lock"
+    ],
+    "description":  "php memory lock",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "dusong",
+            "email": "1264735045@qq.com",
+            "homepage": "https://github.com/dusong0717",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hormone\\Lock\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HormoneTest\\Lock\\": "tests/Cases"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packagist.laravel-china.org"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit -c phpunit.xml"
+    }
+}
