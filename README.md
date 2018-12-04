@@ -1,6 +1,6 @@
 # PHP /memory-lock
 
-php 内存锁
+php memory-lock
 
 ## Install
 
